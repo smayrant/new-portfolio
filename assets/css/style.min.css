@@ -27,940 +27,358 @@
      text-overflow: ellipsis;
   overflow: hidden; }
 
-html {
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #000;
-  background: #fff;
-  font: 16px/1.2 Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  min-width: 320px; }
+  margin: 0; }
 
-img {
-  max-width: 100%;
-  height: auto; }
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
 
-.gm-style img {
-  max-width: none; }
-
-@media only screen and (min-width: 1025px) {
-  a[href^="tel"], a[href^="skype"], a[href^="sms"] {
-    cursor: default;
-    pointer-events: none; } }
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6,
-.h {
-  font-family: inherit;
-  font-weight: bold;
-  margin: 0 0 0.5em;
-  color: inherit; }
-
-h1, .h1 {
-  font-size: 30px; }
-
-h2, .h2 {
-  font-size: 27px; }
-
-h3, .h3 {
-  font-size: 24px; }
-
-h4, .h4 {
-  font-size: 21px; }
-
-h5, .h5 {
-  font-size: 17px; }
-
-h6, .h6 {
-  font-size: 15px; }
-
-p {
-  margin: 0 0 1em; }
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
 
 a {
-  color: #39f; }
-  a:hover, a:focus {
-    text-decoration: none; }
+  text-decoration: none; }
 
-form,
-fieldset {
-  margin: 0;
-  padding: 0;
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
   border-style: none; }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
-input[type='search'],
-input[type='password'],
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
 textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #999;
-  padding: 0.4em 0.7em; }
-  input[type='text']:focus,
-  input[type='tel']:focus,
-  input[type='email']:focus,
-  input[type='search']:focus,
-  input[type='password']:focus,
-  textarea:focus {
-    border-color: #000; }
-  input[type='text']::-webkit-input-placeholder,
-  input[type='tel']::-webkit-input-placeholder,
-  input[type='email']::-webkit-input-placeholder,
-  input[type='search']::-webkit-input-placeholder,
-  input[type='password']::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
-    color: #999; }
-  input[type='text']::-moz-placeholder,
-  input[type='tel']::-moz-placeholder,
-  input[type='email']::-moz-placeholder,
-  input[type='search']::-moz-placeholder,
-  input[type='password']::-moz-placeholder,
-  textarea::-moz-placeholder {
-    opacity: 1;
-    color: #999; }
-  input[type='text']:-moz-placeholder,
-  input[type='tel']:-moz-placeholder,
-  input[type='email']:-moz-placeholder,
-  input[type='search']:-moz-placeholder,
-  input[type='password']:-moz-placeholder,
-  textarea:-moz-placeholder {
-    color: #999; }
-  input[type='text']:-ms-input-placeholder,
-  input[type='tel']:-ms-input-placeholder,
-  input[type='email']:-ms-input-placeholder,
-  input[type='search']:-ms-input-placeholder,
-  input[type='password']:-ms-input-placeholder,
-  textarea:-ms-input-placeholder {
-    color: #999; }
-  input[type='text'].placeholder,
-  input[type='tel'].placeholder,
-  input[type='email'].placeholder,
-  input[type='search'].placeholder,
-  input[type='password'].placeholder,
-  textarea.placeholder {
-    color: #999; }
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
 
-select {
-  -webkit-border-radius: 0; }
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
 
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
 textarea {
-  resize: vertical;
-  vertical-align: top; }
+  overflow: auto; }
 
-button,
-input[type='button'],
-input[type='reset'],
-input[type='file'],
-input[type='submit'] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  cursor: pointer; }
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
 
-#wrapper {
-  overflow: hidden; }
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
 
-.starter-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+li {
+  list-style: none; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.navigation-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
-  color: #fff; }
-  .starter-box h1 {
-    width: 100%;
-    font-size: 48px; }
-  .starter-box p {
-    font-size: 24px; }
+  margin-top: 10px; }
 
-.entry-section {
-  height: 100vh; }
+.navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .navigation-menu-item {
+    margin-left: 50px; }
 
-#home-canvas {
-  height: 100%; }
+.logo {
+  margin-top: 16px;
+  margin-right: auto; }
 
-.entry-cells {
-  background: #191e23;
-  height: 100%;
-  width: 100%; }
-  .entry-cells .cell {
-    float: left;
-    width: 10%;
-    height: 10%;
-    position: relative; }
-    .entry-cells .cell:after {
-      content: '';
-      -webkit-transform: scale(0.5);
-          -ms-transform: scale(0.5);
-              transform: scale(0.5);
-      -webkit-animation-name: pulse;
-              animation-name: pulse;
-      -webkit-animation-duration: 1s;
-              animation-duration: 1s;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      height: 9px;
-      width: 9px;
-      border-radius: 100%;
-      background: #fff;
-      overflow: hidden; }
-  .entry-cells .cell-0:after {
-    margin-left: 4px;
-    margin-top: 62px;
-    -webkit-animation-duration: 1.16s;
-            animation-duration: 1.16s;
-    -webkit-animation-delay: 0.59s;
-            animation-delay: 0.59s; }
-  .entry-cells .cell-1:after {
-    margin-left: 16px;
-    margin-top: 47px;
-    -webkit-animation-duration: 1.33s;
-            animation-duration: 1.33s;
-    -webkit-animation-delay: 0.83s;
-            animation-delay: 0.83s; }
-  .entry-cells .cell-2:after {
-    margin-left: 61px;
-    margin-top: 64px;
-    -webkit-animation-duration: 1.85s;
-            animation-duration: 1.85s;
-    -webkit-animation-delay: 0.67s;
-            animation-delay: 0.67s; }
-  .entry-cells .cell-3:after {
-    margin-left: 27px;
-    margin-top: 61px;
-    -webkit-animation-duration: 1.96s;
-            animation-duration: 1.96s;
-    -webkit-animation-delay: 0.39s;
-            animation-delay: 0.39s; }
-  .entry-cells .cell-4:after {
-    margin-left: 9px;
-    margin-top: 38px;
-    -webkit-animation-duration: 1.36s;
-            animation-duration: 1.36s;
-    -webkit-animation-delay: 0.57s;
-            animation-delay: 0.57s; }
-  .entry-cells .cell-5:after {
-    margin-left: 39px;
-    margin-top: -17px;
-    -webkit-animation-duration: 1.9s;
-            animation-duration: 1.9s;
-    -webkit-animation-delay: 0.97s;
-            animation-delay: 0.97s; }
-  .entry-cells .cell-6:after {
-    margin-left: 47px;
-    margin-top: 51px;
-    -webkit-animation-duration: 1.96s;
-            animation-duration: 1.96s;
-    -webkit-animation-delay: 0.41s;
-            animation-delay: 0.41s; }
-  .entry-cells .cell-7:after {
-    margin-left: 56px;
-    margin-top: 51px;
-    -webkit-animation-duration: 1.26s;
-            animation-duration: 1.26s;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s; }
-  .entry-cells .cell-8:after {
-    margin-left: 11px;
-    margin-top: 15px;
-    -webkit-animation-duration: 1.36s;
-            animation-duration: 1.36s;
-    -webkit-animation-delay: 0.12s;
-            animation-delay: 0.12s; }
-  .entry-cells .cell-9:after {
-    margin-left: 42px;
-    margin-top: 19px;
-    -webkit-animation-duration: 1.46s;
-            animation-duration: 1.46s;
-    -webkit-animation-delay: 0.24s;
-            animation-delay: 0.24s; }
-  .entry-cells .cell-10:after {
-    margin-left: 15px;
-    margin-top: 34px;
-    -webkit-animation-duration: 1.92s;
-            animation-duration: 1.92s;
-    -webkit-animation-delay: 0.29s;
-            animation-delay: 0.29s; }
-  .entry-cells .cell-11:after {
-    margin-left: 63px;
-    margin-top: 32px;
-    -webkit-animation-duration: 1.99s;
-            animation-duration: 1.99s;
-    -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s; }
-  .entry-cells .cell-12:after {
-    margin-left: 52px;
-    margin-top: 26px;
-    -webkit-animation-duration: 1.61s;
-            animation-duration: 1.61s;
-    -webkit-animation-delay: 0.85s;
-            animation-delay: 0.85s; }
-  .entry-cells .cell-13:after {
-    margin-left: 37px;
-    margin-top: 7px;
-    -webkit-animation-duration: 1.64s;
-            animation-duration: 1.64s;
-    -webkit-animation-delay: 0.27s;
-            animation-delay: 0.27s; }
-  .entry-cells .cell-14:after {
-    margin-left: -9px;
-    margin-top: 65px;
-    -webkit-animation-duration: 1.33s;
-            animation-duration: 1.33s;
-    -webkit-animation-delay: 0.99s;
-            animation-delay: 0.99s; }
-  .entry-cells .cell-15:after {
-    margin-left: -8px;
-    margin-top: -11px;
-    -webkit-animation-duration: 1.81s;
-            animation-duration: 1.81s;
-    -webkit-animation-delay: 0.97s;
-            animation-delay: 0.97s; }
-  .entry-cells .cell-16:after {
-    margin-left: 32px;
-    margin-top: -19px;
-    -webkit-animation-duration: 1.24s;
-            animation-duration: 1.24s;
-    -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s; }
-  .entry-cells .cell-17:after {
-    margin-left: -11px;
-    margin-top: 15px;
-    -webkit-animation-duration: 1.24s;
-            animation-duration: 1.24s;
-    -webkit-animation-delay: 0.43s;
-            animation-delay: 0.43s; }
-  .entry-cells .cell-18:after {
-    margin-left: -9px;
-    margin-top: -5px;
-    -webkit-animation-duration: 1.81s;
-            animation-duration: 1.81s;
-    -webkit-animation-delay: 0.37s;
-            animation-delay: 0.37s; }
-  .entry-cells .cell-19:after {
-    margin-left: 50px;
-    margin-top: -14px;
-    -webkit-animation-duration: 1.37s;
-            animation-duration: 1.37s;
-    -webkit-animation-delay: 0.94s;
-            animation-delay: 0.94s; }
-  .entry-cells .cell-20:after {
-    margin-left: -4px;
-    margin-top: 24px;
-    -webkit-animation-duration: 1.26s;
-            animation-duration: 1.26s;
-    -webkit-animation-delay: 0.01s;
-            animation-delay: 0.01s; }
-  .entry-cells .cell-21:after {
-    margin-left: 49px;
-    margin-top: 27px;
-    -webkit-animation-duration: 1.07s;
-            animation-duration: 1.07s;
-    -webkit-animation-delay: 0.12s;
-            animation-delay: 0.12s; }
-  .entry-cells .cell-22:after {
-    margin-left: 29px;
-    margin-top: 42px;
-    -webkit-animation-duration: 1.21s;
-            animation-duration: 1.21s;
-    -webkit-animation-delay: 0.95s;
-            animation-delay: 0.95s; }
-  .entry-cells .cell-23:after {
-    margin-left: -10px;
-    margin-top: 22px;
-    -webkit-animation-duration: 1.97s;
-            animation-duration: 1.97s;
-    -webkit-animation-delay: 0.81s;
-            animation-delay: 0.81s; }
-  .entry-cells .cell-24:after {
-    margin-left: -18px;
-    margin-top: 21px;
-    -webkit-animation-duration: 1.26s;
-            animation-duration: 1.26s;
-    -webkit-animation-delay: 0.14s;
-            animation-delay: 0.14s; }
-  .entry-cells .cell-25:after {
-    margin-left: 16px;
-    margin-top: -3px;
-    -webkit-animation-duration: 1.59s;
-            animation-duration: 1.59s;
-    -webkit-animation-delay: 0.63s;
-            animation-delay: 0.63s; }
-  .entry-cells .cell-26:after {
-    margin-left: 59px;
-    margin-top: 39px;
-    -webkit-animation-duration: 1.7s;
-            animation-duration: 1.7s;
-    -webkit-animation-delay: 0.63s;
-            animation-delay: 0.63s; }
-  .entry-cells .cell-27:after {
-    margin-left: -17px;
-    margin-top: 50px;
-    -webkit-animation-duration: 1.53s;
-            animation-duration: 1.53s;
-    -webkit-animation-delay: 0.05s;
-            animation-delay: 0.05s; }
-  .entry-cells .cell-28:after {
-    margin-left: 46px;
-    margin-top: 48px;
-    -webkit-animation-duration: 1.43s;
-            animation-duration: 1.43s;
-    -webkit-animation-delay: 0.53s;
-            animation-delay: 0.53s; }
-  .entry-cells .cell-29:after {
-    margin-left: 23px;
-    margin-top: 6px;
-    -webkit-animation-duration: 1.13s;
-            animation-duration: 1.13s;
-    -webkit-animation-delay: 0.73s;
-            animation-delay: 0.73s; }
-  .entry-cells .cell-30:after {
-    margin-left: 59px;
-    margin-top: 25px;
-    -webkit-animation-duration: 1.79s;
-            animation-duration: 1.79s;
-    -webkit-animation-delay: 0.79s;
-            animation-delay: 0.79s; }
-  .entry-cells .cell-31:after {
-    margin-left: 63px;
-    margin-top: 15px;
-    -webkit-animation-duration: 1.66s;
-            animation-duration: 1.66s;
-    -webkit-animation-delay: 0.83s;
-            animation-delay: 0.83s; }
-  .entry-cells .cell-32:after {
-    margin-left: -2px;
-    margin-top: 20px;
-    -webkit-animation-duration: 1.08s;
-            animation-duration: 1.08s;
-    -webkit-animation-delay: 0.69s;
-            animation-delay: 0.69s; }
-  .entry-cells .cell-33:after {
-    margin-left: -1px;
-    margin-top: -18px;
-    -webkit-animation-duration: 1.63s;
-            animation-duration: 1.63s;
-    -webkit-animation-delay: 0.63s;
-            animation-delay: 0.63s; }
-  .entry-cells .cell-34:after {
-    margin-left: 30px;
-    margin-top: 56px;
-    -webkit-animation-duration: 1.92s;
-            animation-duration: 1.92s;
-    -webkit-animation-delay: 0.05s;
-            animation-delay: 0.05s; }
-  .entry-cells .cell-35:after {
-    margin-left: 5px;
-    margin-top: 11px;
-    -webkit-animation-duration: 1.28s;
-            animation-duration: 1.28s;
-    -webkit-animation-delay: 0.11s;
-            animation-delay: 0.11s; }
-  .entry-cells .cell-36:after {
-    margin-left: 28px;
-    margin-top: 36px;
-    -webkit-animation-duration: 1.51s;
-            animation-duration: 1.51s;
-    -webkit-animation-delay: 0.89s;
-            animation-delay: 0.89s; }
-  .entry-cells .cell-37:after {
-    margin-left: 20px;
-    margin-top: 43px;
-    -webkit-animation-duration: 1.74s;
-            animation-duration: 1.74s;
-    -webkit-animation-delay: 0.84s;
-            animation-delay: 0.84s; }
-  .entry-cells .cell-38:after {
-    margin-left: 0px;
-    margin-top: 25px;
-    -webkit-animation-duration: 1.56s;
-            animation-duration: 1.56s;
-    -webkit-animation-delay: 0.03s;
-            animation-delay: 0.03s; }
-  .entry-cells .cell-39:after {
-    margin-left: 27px;
-    margin-top: 20px;
-    -webkit-animation-duration: 1.48s;
-            animation-duration: 1.48s;
-    -webkit-animation-delay: 0.03s;
-            animation-delay: 0.03s; }
-  .entry-cells .cell-40:after {
-    margin-left: 44px;
-    margin-top: 12px;
-    -webkit-animation-duration: 1.85s;
-            animation-duration: 1.85s;
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
-  .entry-cells .cell-41:after {
-    margin-left: 57px;
-    margin-top: 55px;
-    -webkit-animation-duration: 1.59s;
-            animation-duration: 1.59s;
-    -webkit-animation-delay: 0.69s;
-            animation-delay: 0.69s; }
-  .entry-cells .cell-42:after {
-    margin-left: 49px;
-    margin-top: 43px;
-    -webkit-animation-duration: 1.79s;
-            animation-duration: 1.79s;
-    -webkit-animation-delay: 0.72s;
-            animation-delay: 0.72s; }
-  .entry-cells .cell-43:after {
-    margin-left: 26px;
-    margin-top: 39px;
-    -webkit-animation-duration: 1.16s;
-            animation-duration: 1.16s;
-    -webkit-animation-delay: 0.97s;
-            animation-delay: 0.97s; }
-  .entry-cells .cell-44:after {
-    margin-left: -19px;
-    margin-top: 64px;
-    -webkit-animation-duration: 1.39s;
-            animation-duration: 1.39s;
-    -webkit-animation-delay: 0.41s;
-            animation-delay: 0.41s; }
-  .entry-cells .cell-45:after {
-    margin-left: 21px;
-    margin-top: 45px;
-    -webkit-animation-duration: 1.32s;
-            animation-duration: 1.32s;
-    -webkit-animation-delay: 0.82s;
-            animation-delay: 0.82s; }
-  .entry-cells .cell-46:after {
-    margin-left: 46px;
-    margin-top: 56px;
-    -webkit-animation-duration: 1.64s;
-            animation-duration: 1.64s;
-    -webkit-animation-delay: 0.66s;
-            animation-delay: 0.66s; }
-  .entry-cells .cell-47:after {
-    margin-left: 33px;
-    margin-top: 52px;
-    -webkit-animation-duration: 1.14s;
-            animation-duration: 1.14s;
-    -webkit-animation-delay: 0.74s;
-            animation-delay: 0.74s; }
-  .entry-cells .cell-48:after {
-    margin-left: -13px;
-    margin-top: 18px;
-    -webkit-animation-duration: 1.71s;
-            animation-duration: 1.71s;
-    -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s; }
-  .entry-cells .cell-49:after {
-    margin-left: 8px;
-    margin-top: 37px;
-    -webkit-animation-duration: 1.65s;
-            animation-duration: 1.65s;
-    -webkit-animation-delay: 0.13s;
-            animation-delay: 0.13s; }
-  .entry-cells .cell-50:after {
-    margin-left: 17px;
-    margin-top: 3px;
-    -webkit-animation-duration: 1.99s;
-            animation-duration: 1.99s;
-    -webkit-animation-delay: 0.36s;
-            animation-delay: 0.36s; }
-  .entry-cells .cell-51:after {
-    margin-left: -16px;
-    margin-top: 20px;
-    -webkit-animation-duration: 1.02s;
-            animation-duration: 1.02s;
-    -webkit-animation-delay: 0.43s;
-            animation-delay: 0.43s; }
-  .entry-cells .cell-52:after {
-    margin-left: -7px;
-    margin-top: -12px;
-    -webkit-animation-duration: 1.07s;
-            animation-duration: 1.07s;
-    -webkit-animation-delay: 0.27s;
-            animation-delay: 0.27s; }
-  .entry-cells .cell-53:after {
-    margin-left: -5px;
-    margin-top: 33px;
-    -webkit-animation-duration: 1.95s;
-            animation-duration: 1.95s;
-    -webkit-animation-delay: 0.47s;
-            animation-delay: 0.47s; }
-  .entry-cells .cell-54:after {
-    margin-left: 23px;
-    margin-top: 40px;
-    -webkit-animation-duration: 1.63s;
-            animation-duration: 1.63s;
-    -webkit-animation-delay: 0.62s;
-            animation-delay: 0.62s; }
-  .entry-cells .cell-55:after {
-    margin-left: 16px;
-    margin-top: -19px;
-    -webkit-animation-duration: 1.96s;
-            animation-duration: 1.96s;
-    -webkit-animation-delay: 0.67s;
-            animation-delay: 0.67s; }
-  .entry-cells .cell-56:after {
-    margin-left: 4px;
-    margin-top: -18px;
-    -webkit-animation-duration: 1.46s;
-            animation-duration: 1.46s;
-    -webkit-animation-delay: 0.82s;
-            animation-delay: 0.82s; }
-  .entry-cells .cell-57:after {
-    margin-left: 16px;
-    margin-top: -13px;
-    -webkit-animation-duration: 1.67s;
-            animation-duration: 1.67s;
-    -webkit-animation-delay: 0.65s;
-            animation-delay: 0.65s; }
-  .entry-cells .cell-58:after {
-    margin-left: 24px;
-    margin-top: 44px;
-    -webkit-animation-duration: 1.94s;
-            animation-duration: 1.94s;
-    -webkit-animation-delay: 0.17s;
-            animation-delay: 0.17s; }
-  .entry-cells .cell-59:after {
-    margin-left: 8px;
-    margin-top: 58px;
-    -webkit-animation-duration: 1.66s;
-            animation-duration: 1.66s;
-    -webkit-animation-delay: 0.55s;
-            animation-delay: 0.55s; }
-  .entry-cells .cell-60:after {
-    margin-left: 2px;
-    margin-top: 41px;
-    -webkit-animation-duration: 1.43s;
-            animation-duration: 1.43s;
-    -webkit-animation-delay: 0.01s;
-            animation-delay: 0.01s; }
-  .entry-cells .cell-61:after {
-    margin-left: 37px;
-    margin-top: 50px;
-    -webkit-animation-duration: 1.2s;
-            animation-duration: 1.2s;
-    -webkit-animation-delay: 0.48s;
-            animation-delay: 0.48s; }
-  .entry-cells .cell-62:after {
-    margin-left: 18px;
-    margin-top: 16px;
-    -webkit-animation-duration: 1.26s;
-            animation-duration: 1.26s;
-    -webkit-animation-delay: 0.72s;
-            animation-delay: 0.72s; }
-  .entry-cells .cell-63:after {
-    margin-left: 35px;
-    margin-top: 58px;
-    -webkit-animation-duration: 1.12s;
-            animation-duration: 1.12s;
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
-  .entry-cells .cell-64:after {
-    margin-left: 62px;
-    margin-top: 28px;
-    -webkit-animation-duration: 1.4s;
-            animation-duration: 1.4s;
-    -webkit-animation-delay: 0.86s;
-            animation-delay: 0.86s; }
-  .entry-cells .cell-65:after {
-    margin-left: 9px;
-    margin-top: 59px;
-    -webkit-animation-duration: 1.15s;
-            animation-duration: 1.15s;
-    -webkit-animation-delay: 0.75s;
-            animation-delay: 0.75s; }
-  .entry-cells .cell-66:after {
-    margin-left: 33px;
-    margin-top: 62px;
-    -webkit-animation-duration: 1.59s;
-            animation-duration: 1.59s;
-    -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s; }
-  .entry-cells .cell-67:after {
-    margin-left: 16px;
-    margin-top: 54px;
-    -webkit-animation-duration: 1.86s;
-            animation-duration: 1.86s;
-    -webkit-animation-delay: 0.18s;
-            animation-delay: 0.18s; }
-  .entry-cells .cell-68:after {
-    margin-left: -10px;
-    margin-top: 62px;
-    -webkit-animation-duration: 1.79s;
-            animation-duration: 1.79s;
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
-  .entry-cells .cell-69:after {
-    margin-left: 31px;
-    margin-top: -18px;
-    -webkit-animation-duration: 1.07s;
-            animation-duration: 1.07s;
-    -webkit-animation-delay: 0.9s;
-            animation-delay: 0.9s; }
-  .entry-cells .cell-70:after {
-    margin-left: -13px;
-    margin-top: 19px;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-delay: 0.93s;
-            animation-delay: 0.93s; }
-  .entry-cells .cell-71:after {
-    margin-left: 60px;
-    margin-top: 56px;
-    -webkit-animation-duration: 1.11s;
-            animation-duration: 1.11s;
-    -webkit-animation-delay: 0.37s;
-            animation-delay: 0.37s; }
-  .entry-cells .cell-72:after {
-    margin-left: 64px;
-    margin-top: 9px;
-    -webkit-animation-duration: 1.53s;
-            animation-duration: 1.53s;
-    -webkit-animation-delay: 0.18s;
-            animation-delay: 0.18s; }
-  .entry-cells .cell-73:after {
-    margin-left: 54px;
-    margin-top: -14px;
-    -webkit-animation-duration: 1.42s;
-            animation-duration: 1.42s;
-    -webkit-animation-delay: 0.71s;
-            animation-delay: 0.71s; }
-  .entry-cells .cell-74:after {
-    margin-left: -2px;
-    margin-top: -5px;
-    -webkit-animation-duration: 1.9s;
-            animation-duration: 1.9s;
-    -webkit-animation-delay: 0.93s;
-            animation-delay: 0.93s; }
-  .entry-cells .cell-75:after {
-    margin-left: 52px;
-    margin-top: -3px;
-    -webkit-animation-duration: 1.16s;
-            animation-duration: 1.16s;
-    -webkit-animation-delay: 0.36s;
-            animation-delay: 0.36s; }
-  .entry-cells .cell-76:after {
-    margin-left: -5px;
-    margin-top: 5px;
-    -webkit-animation-duration: 1.18s;
-            animation-duration: 1.18s;
-    -webkit-animation-delay: 0.88s;
-            animation-delay: 0.88s; }
-  .entry-cells .cell-77:after {
-    margin-left: -19px;
-    margin-top: -11px;
-    -webkit-animation-duration: 1.69s;
-            animation-duration: 1.69s;
-    -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s; }
-  .entry-cells .cell-78:after {
-    margin-left: 46px;
-    margin-top: -11px;
-    -webkit-animation-duration: 1.8s;
-            animation-duration: 1.8s;
-    -webkit-animation-delay: 0.98s;
-            animation-delay: 0.98s; }
-  .entry-cells .cell-79:after {
-    margin-left: 29px;
-    margin-top: 49px;
-    -webkit-animation-duration: 1.12s;
-            animation-duration: 1.12s;
-    -webkit-animation-delay: 0.22s;
-            animation-delay: 0.22s; }
-  .entry-cells .cell-80:after {
-    margin-left: -7px;
-    margin-top: 14px;
-    -webkit-animation-duration: 1.56s;
-            animation-duration: 1.56s;
-    -webkit-animation-delay: 0.65s;
-            animation-delay: 0.65s; }
-  .entry-cells .cell-81:after {
-    margin-left: 13px;
-    margin-top: 41px;
-    -webkit-animation-duration: 1.11s;
-            animation-duration: 1.11s;
-    -webkit-animation-delay: 0.41s;
-            animation-delay: 0.41s; }
-  .entry-cells .cell-82:after {
-    margin-left: 22px;
-    margin-top: 43px;
-    -webkit-animation-duration: 1.23s;
-            animation-duration: 1.23s;
-    -webkit-animation-delay: 0.35s;
-            animation-delay: 0.35s; }
-  .entry-cells .cell-83:after {
-    margin-left: 32px;
-    margin-top: 5px;
-    -webkit-animation-duration: 1.77s;
-            animation-duration: 1.77s;
-    -webkit-animation-delay: 0.75s;
-            animation-delay: 0.75s; }
-  .entry-cells .cell-84:after {
-    margin-left: 17px;
-    margin-top: 25px;
-    -webkit-animation-duration: 1.22s;
-            animation-duration: 1.22s;
-    -webkit-animation-delay: 0.92s;
-            animation-delay: 0.92s; }
-  .entry-cells .cell-85:after {
-    margin-left: -12px;
-    margin-top: 19px;
-    -webkit-animation-duration: 1.53s;
-            animation-duration: 1.53s;
-    -webkit-animation-delay: 0.79s;
-            animation-delay: 0.79s; }
-  .entry-cells .cell-86:after {
-    margin-left: 37px;
-    margin-top: 16px;
-    -webkit-animation-duration: 1.44s;
-            animation-duration: 1.44s;
-    -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s; }
-  .entry-cells .cell-87:after {
-    margin-left: 15px;
-    margin-top: -12px;
-    -webkit-animation-duration: 1.53s;
-            animation-duration: 1.53s;
-    -webkit-animation-delay: 0.48s;
-            animation-delay: 0.48s; }
-  .entry-cells .cell-88:after {
-    margin-left: 38px;
-    margin-top: 42px;
-    -webkit-animation-duration: 1.98s;
-            animation-duration: 1.98s;
-    -webkit-animation-delay: 0.68s;
-            animation-delay: 0.68s; }
-  .entry-cells .cell-89:after {
-    margin-left: -15px;
-    margin-top: 18px;
-    -webkit-animation-duration: 1.34s;
-            animation-duration: 1.34s;
-    -webkit-animation-delay: 0.75s;
-            animation-delay: 0.75s; }
-  .entry-cells .cell-90:after {
-    margin-left: 14px;
-    margin-top: 16px;
-    -webkit-animation-duration: 1.46s;
-            animation-duration: 1.46s;
-    -webkit-animation-delay: 0.24s;
-            animation-delay: 0.24s; }
-  .entry-cells .cell-91:after {
-    margin-left: 33px;
-    margin-top: -6px;
-    -webkit-animation-duration: 1.59s;
-            animation-duration: 1.59s;
-    -webkit-animation-delay: 0.32s;
-            animation-delay: 0.32s; }
-  .entry-cells .cell-92:after {
-    margin-left: 46px;
-    margin-top: 52px;
-    -webkit-animation-duration: 1.23s;
-            animation-duration: 1.23s;
-    -webkit-animation-delay: 0.51s;
-            animation-delay: 0.51s; }
-  .entry-cells .cell-93:after {
-    margin-left: 20px;
-    margin-top: 58px;
-    -webkit-animation-duration: 1.64s;
-            animation-duration: 1.64s;
-    -webkit-animation-delay: 0.84s;
-            animation-delay: 0.84s; }
-  .entry-cells .cell-94:after {
-    margin-left: 60px;
-    margin-top: 40px;
-    -webkit-animation-duration: 1.43s;
-            animation-duration: 1.43s;
-    -webkit-animation-delay: 0.69s;
-            animation-delay: 0.69s; }
-  .entry-cells .cell-95:after {
-    margin-left: 51px;
-    margin-top: 59px;
-    -webkit-animation-duration: 1.33s;
-            animation-duration: 1.33s;
-    -webkit-animation-delay: 0.11s;
-            animation-delay: 0.11s; }
-  .entry-cells .cell-96:after {
-    margin-left: 65px;
-    margin-top: -4px;
-    -webkit-animation-duration: 1.06s;
-            animation-duration: 1.06s;
-    -webkit-animation-delay: 0.35s;
-            animation-delay: 0.35s; }
-  .entry-cells .cell-97:after {
-    margin-left: -5px;
-    margin-top: 43px;
-    -webkit-animation-duration: 1.53s;
-            animation-duration: 1.53s;
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
-  .entry-cells .cell-98:after {
-    margin-left: 18px;
-    margin-top: 4px;
-    -webkit-animation-duration: 1.76s;
-            animation-duration: 1.76s;
-    -webkit-animation-delay: 0.54s;
-            animation-delay: 0.54s; }
-  .entry-cells .cell-99:after {
-    margin-left: 17px;
-    margin-top: 55px;
-    -webkit-animation-duration: 1.48s;
-            animation-duration: 1.48s;
-    -webkit-animation-delay: 0.87s;
-            animation-delay: 0.87s; }
-  .entry-cells .cell-100:after {
-    margin-left: 2px;
-    margin-top: 9px;
-    -webkit-animation-duration: 1.41s;
-            animation-duration: 1.41s;
-    -webkit-animation-delay: 0.23s;
-            animation-delay: 0.23s; }
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px; }
 
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6); }
-  70% {
-    -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
-            box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); } }
+.hero-text {
+  margin-right: auto; }
 
-@keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6); }
-  70% {
-    -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
-            box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); } }
+.hero-text h1 {
+  margin-top: 0; }
+
+.large-hero-letter {
+  font-size: 10em;
+  -webkit-transform: perspective(400px) rotateY(0deg);
+          transform: perspective(400px) rotateY(0deg); }
+  .large-hero-letter:hover {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(180deg);
+            transform: perspective(400px) translateZ(150px) rotateY(180deg); }
 
 /*# sourceMappingURL=style.min.css.map */

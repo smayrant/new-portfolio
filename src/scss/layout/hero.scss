@@ -1,19 +1,29 @@
 .hero-section{
   display: flex;
-  margin-top: 90px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1523430376328-99bb2aa59bb9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=752eed520563f3973c62362d2db438e2&auto=format&fit=crop&w=1675&q=80");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 .hero-text{
   margin-right: auto;
+
+    color: white;
 }
 .hero-text h1{
   margin-top: 0
 }
 
+.hero-button{
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
 .large-hero-letter{
   font-size: 10em;
-  transform: perspective(400px) rotateY(0deg);
-  &:hover{
-    transform: perspective(400px) translateZ(150px) rotateY(180deg);
-  }
 }

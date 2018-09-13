@@ -1,6 +1,11 @@
+.navigation-section{
+  background-color: $purple;
+  color: $light-gray;
+}
+
 .navigation-container{
   display: flex;
-  margin-top: 10px;
+  background: $purple;
 }
 
 .navigation-menu{

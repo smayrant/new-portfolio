@@ -1,0 +1,26 @@
+.about-me-titles-container{
+  text-align: center;
+  margin-top: 6em;
+}
+
+.about-me-title{
+  color: $purple
+}
+.about-me-text{
+  color: $dark-gray;
+  width: 100%;
+
+  p{
+    line-height: 29px;
+  }
+}
+
+.about-me-text-container{
+  display: flex;
+}
+
+.about-background-text p{
+  font-size: 8em;
+  color: rgba(223, 228, 234,0.4);
+  transform: rotate(20deg)
+}

@@ -341,21 +341,21 @@ li {
   list-style: none; }
 
 body {
-  background-color: #f3f3f3; }
+  background-image: url("../assets/images/what-the-hex.png");
+  background-repeat: repeat; }
 
 .container {
   max-width: 1100px;
   margin: 0 auto; }
 
 .navigation-section {
-  background-color: #5352ed;
-  color: #dfe4ea; }
+  color: #d9d7e2; }
 
 .navigation-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #5352ed; }
+  font-size: 1.5em; }
 
 .navigation-menu {
   display: -webkit-box;
@@ -371,20 +371,26 @@ body {
 .hero-section {
   background-color: #5352ed;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  background: url("../../assets/images/background.jpg") no-repeat center center fixed;
+  background-size: cover; }
 
 .hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 80vh; }
 
 .hero-text {
-  color: #dfe4ea;
-  margin-right: auto; }
+  color: #d9d7e2;
+  margin-right: auto;
+  margin: 0 auto; }
   .hero-text h1 {
     font-size: 4em; }
   .hero-text h5 {
@@ -393,7 +399,7 @@ body {
     font-size: 1em; }
 
 .hero-button {
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 5px 15px; }
 
 .large-hero-letter {
@@ -404,10 +410,10 @@ body {
   margin-top: 6em; }
 
 .about-me-title {
-  color: #5352ed; }
+  color: #34256A; }
 
 .about-me-text {
-  color: #747d8c;
+  color: black;
   width: 100%; }
   .about-me-text p {
     line-height: 29px; }
@@ -448,7 +454,7 @@ body {
   text-align: center; }
 
 .skills-container-right {
-  border: 1px #5352ed solid;
+  border: 1px #34256A solid;
   margin-left: auto; }
 
 .skills-list {
@@ -460,5 +466,26 @@ body {
 .list-1 {
   margin-right: auto;
   padding-left: 0; }
+
+.portfolio-section {
+  text-align: center; }
+
+.portfolio-content img {
+  width: 80%; }
+
+.projects-container {
+  width: 85%; }
+
+.project-container-2, .project-container-4 {
+  margin-left: auto; }
+
+.portfolio-content div {
+  display: inline-block; }
+
+.footer {
+  background: #060A30;
+  padding: 6em;
+  text-align: center;
+  color: #d9d7e2; }
 
 /*# sourceMappingURL=style.min.css.map */

@@ -1,0 +1,14 @@
+.about-summary-section{
+  background: $light-gray;
+  padding: 70px;
+  text-align: center;
+}
+
+.about-summary-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.summary-item{
+  width: 33.33%;
+}

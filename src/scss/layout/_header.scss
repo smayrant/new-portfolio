@@ -1,5 +1,5 @@
 .navigation-section{
-  color: $light-gray;
+  color: white;
 }
 
 .navigation-container{
@@ -10,11 +10,15 @@
 .navigation-menu{
   display: flex;
   &-item{
-    margin-left: 50px;
+    margin-left: 60px;
   }
 }
 
 .logo{
-  margin-top: 16px;
   margin-right: auto;
+  max-width: 90px;
+}
+
+.logo img{
+  width: 100%;
 }

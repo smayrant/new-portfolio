@@ -1,26 +1,54 @@
-.about-me-titles-container{
+.about-me-section {
+  margin-bottom: 8em;
+}
+
+.about-me-titles-container {
   text-align: center;
   margin-top: 6em;
 }
 
-.about-me-title{
-  color: $dark-purple
+.about-me-title {
+  color: $dark-purple;
+  font-size: 3em;
 }
-.about-me-text{
-  color: black;
-  width: 100%;
 
-  p{
+.about-me-info {
+  display: flex;
+}
+
+.about-me-text {
+  color: $gray-text;
+  font-size: 1.1em;
+
+
+  p {
     line-height: 29px;
   }
 }
 
-.about-me-text-container{
-  display: flex;
+.about-me-text-container {
+  width: 70%;
+  margin-right: auto;
 }
 
-.about-background-text p{
+.about-background-text p {
   font-size: 8em;
   color: rgba(223, 228, 234,0.4);
-  transform: rotate(20deg)
+  transform: rotate(20deg);
+}
+
+.skills-container {
+  width: 20%;
+  color: $gray-text;
+  font-size: 1.1em;
+}
+
+.skills-list{
+  line-height: 29px;
+  padding-left: 0;
+}
+
+hr{
+  background: $light-purple;
+  border: $light-purple solid 1px;
 }
